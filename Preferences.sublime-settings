@@ -1,0 +1,25 @@
+{
+	"auto_indent": true,
+	"bold_folder_labels": true,
+	"color_scheme": "Packages/User/SublimeLinter/Monokai (SL).tmTheme",
+	"draw_minimap_border": true,
+	"draw_white_space": "all",
+	"ensure_newline_at_eof_on_save": true,
+	"fade_fold_buttons": false,
+	"font_face": "Consolas, Inconsolata",
+	"font_size": 10,
+	"highlight_modified_tabs": true,
+	"ignored_packages":
+	[
+	],
+	"line_padding_bottom": 2,
+	"line_padding_top": 2,
+	"rulers":
+	[
+		80
+	],
+	"smart_indent": true,
+	"translate_tabs_to_spaces": true,
+	"trim_trailing_white_space_on_save": true,
+	"word_wrap": false
+}
