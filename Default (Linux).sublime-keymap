@@ -1,9 +1,12 @@
 [
     { "keys": ["ctrl+alt+n"], "command": "focus_side_bar" },
     { "keys": ["ctrl+n"], "command": "toggle_side_bar" },
+    { "keys": ["alt+n"], "command": "focus_side_bar" },
     { "keys": ["ctrl+t"], "command": "new_file" },
     { "keys": ["ctrl+tab"], "command": "next_view" },
     { "keys": ["ctrl+shift+tab"], "command": "prev_view" },
+    { "keys": ["ctrl+q"], "command": "clear_fields"},
+
 
     // vim navigate on sidebar
 
@@ -20,6 +23,25 @@
     },
 
     { "keys": ["l"], "command": "move", "args": {"by": "characters", "forward": true}, "context":
+
         [ {"key": "control", "operand": "sidebar_tree"} ]
-    }
+    },
+
+    // multi cursor, required power cursor
+    { "keys": ["alt+j"], "command": "expand_cursor_down" },
+    { "keys": ["alt+k"], "command": "expand_cursor_up" },
+
+    // splits window
+
+    { "keys": ["ctrl+w"], "command": "clear_fields"},
+    { "keys": ["ctrl+w", "q"], "command": "close" },
+
+    { "keys": ["ctrl+w", "s"], "command": "new_pane", "args": {"move": false} },
+    { "keys": ["ctrl+w", "w"], "command": "focus_neighboring_group" },
+
+    { "keys": ["ctrl+w", "l"], "command": "focus_neighboring_group" },
+    { "keys": ["ctrl+w", "h"], "command": "focus_neighboring_group", "args": {"forward": false} },
+
+    { "keys": ["ctrl+w", "H"], "command": "move_to_neighboring_group", "args": {"forward": false} },
+    { "keys": ["ctrl+w", "L"], "command": "move_to_neighboring_group" },
 ]
